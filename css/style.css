@@ -1,0 +1,88 @@
+/* Modifico la fuente de todo el cuerpo de la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Roboto&display=swap');
+
+/* Se lo aplico a toda la pagina */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.Descuentos {
+    background-color: #1CD1B0;
+    padding: 10px;
+    /* Tamaño del bloque */
+    font-size: 15px;
+    /* tamaño de letra */
+}
+
+section {
+    /* Aplico el espacio arriba y abajo de todas 
+    las tarjetas */
+    margin-block: 50px;
+    /* Centro las tarjetas y ajusto su 
+    espacio entre ellas */
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    background-color: #00669F;
+    font-size: 40px;
+    padding: 28px;
+    margin: 0;
+}
+
+article.card {
+    width: 300px;
+    /* Ancho del bloque */
+}
+
+img.img-like {
+    /* Posicion obsoluta para que el espacio que 
+    esta ocupando quede libre */
+    position: absolute;
+    top: 15px;
+    left: 21px;
+}
+
+img.img-perfil {
+    position: absolute;
+    top: 128px;
+    left: 90px;
+    border-radius: 50px;
+}
+
+/* Esto me va a permitir que las tarjetas
+Se muevan dentro del contenedor y nunca afuera */
+.card-header {
+    position: relative;
+}
+
+.card-body {
+    text-align: center;
+    padding: 18px;
+    background-color: #F3F3F3;
+}
+
+.card-body h2 {
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.card-body p {
+    text-align: left;
+}
+
+.card-body a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00669F;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #00669F;
+    color: #FFF9F9;
+    padding: 16px;
+}
