@@ -7,12 +7,50 @@ body {
     margin: 0;
 }
 
-.Descuentos {
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+header .Descuentos {
     background-color: #1CD1B0;
     padding: 10px;
     /* Tamaño del bloque */
     font-size: 15px;
     /* tamaño de letra */
+}
+
+header .logo-titulo{
+    background-color: #00669F;
+    display: flex;
+    padding: 2px 16px;
+    align-items: center;
+}
+
+header h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+header nav{
+    background-color: #001D2D;
+    color: #fff;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: end;
+}
+
+header nav a{
+    padding: 11px;
 }
 
 section {
@@ -25,12 +63,23 @@ section {
     justify-content: space-around;
 }
 
-h1 {
+footer {
+    background-color: #00669F;
+    color: #FFF9F9;
+    padding: 16px;
+}
+
+
+.titulo-header{
     background-color: #00669F;
     font-size: 40px;
     padding: 28px;
     margin: 0;
 }
+
+
+
+
 
 article.card {
     width: 300px;
@@ -47,9 +96,19 @@ img.img-like {
 
 img.img-perfil {
     position: absolute;
-    top: 128px;
-    left: 90px;
-    border-radius: 50px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+}
+
+.cards{
+    flex-wrap: wrap;
+    padding: 20px;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
 }
 
 /* Esto me va a permitir que las tarjetas
@@ -81,8 +140,19 @@ Se muevan dentro del contenedor y nunca afuera */
     text-decoration: none;
 }
 
-footer {
+.cajaboton {
     background-color: #00669F;
-    color: #FFF9F9;
-    padding: 16px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F3F3F3;
+}
+
+.fix{
+    position: fixed;
+    top: calc(50vh - 25px);
+    right: 20px;
 }
